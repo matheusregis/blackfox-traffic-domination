@@ -31,16 +31,16 @@ const Login = () => {
           <Link to="/" className="inline-flex items-center gap-3 mb-6">
             <img src={blackfoxLogo} alt="BlackFox" className="w-12 h-12" />
             <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              BlackFox
+              Cloaker Guard
             </span>
           </Link>
         </div>
 
         <Card className="bg-card/50 border-primary/20 shadow-glow">
           <CardHeader className="space-y-1 text-center">
-            <CardTitle className="text-2xl font-bold text-foreground">Welcome Back</CardTitle>
+            <CardTitle className="text-2xl font-bold text-foreground">Bem-vindo de Volta</CardTitle>
             <CardDescription className="text-muted-foreground">
-              Sign in to your BlackFox account to continue dominating traffic
+              Entre na sua conta Cloaker Guard para continuar protegendo seus anúncios
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -50,7 +50,7 @@ const Login = () => {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Digite seu email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="bg-background/50 border-primary/20 focus:border-primary"
@@ -59,12 +59,12 @@ const Login = () => {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="password" className="text-foreground">Password</Label>
+                <Label htmlFor="password" className="text-foreground">Senha</Label>
                 <div className="relative">
                   <Input
                     id="password"
                     type={showPassword ? "text" : "password"}
-                    placeholder="Enter your password"
+                    placeholder="Digite sua senha"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     className="bg-background/50 border-primary/20 focus:border-primary pr-10"
@@ -94,11 +94,11 @@ const Login = () => {
                     className="rounded border-primary/20 bg-background/50"
                   />
                   <Label htmlFor="remember" className="text-sm text-muted-foreground">
-                    Remember me
+                    Lembrar de mim
                   </Label>
                 </div>
                 <Link to="/forgot-password" className="text-sm text-primary hover:underline">
-                  Forgot password?
+                  Esqueceu a senha?
                 </Link>
               </div>
 
@@ -108,15 +108,15 @@ const Login = () => {
                 className="w-full"
                 size="lg"
               >
-                Sign In
+                Entrar
               </Button>
             </form>
 
             <div className="mt-6 text-center">
               <p className="text-muted-foreground">
-                Don't have an account?{" "}
+                Não tem uma conta?{" "}
                 <Link to="/signup" className="text-primary hover:underline font-medium">
-                  Sign up now
+                  Criar conta agora
                 </Link>
               </p>
             </div>

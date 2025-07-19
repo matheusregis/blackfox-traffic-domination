@@ -41,27 +41,27 @@ const Signup = () => {
           <Link to="/" className="inline-flex items-center gap-3 mb-6">
             <img src={blackfoxLogo} alt="BlackFox" className="w-12 h-12" />
             <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              BlackFox
+              Cloaker Guard
             </span>
           </Link>
         </div>
 
         <Card className="bg-card/50 border-primary/20 shadow-glow">
           <CardHeader className="space-y-1 text-center">
-            <CardTitle className="text-2xl font-bold text-foreground">Join the Elite</CardTitle>
+            <CardTitle className="text-2xl font-bold text-foreground">Junte-se aos Profissionais</CardTitle>
             <CardDescription className="text-muted-foreground">
-              Create your BlackFox account and start dominating traffic today
+              Crie sua conta Cloaker Guard e comece a proteger seus anúncios hoje
             </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="firstName" className="text-foreground">First Name</Label>
+                  <Label htmlFor="firstName" className="text-foreground">Nome</Label>
                   <Input
                     id="firstName"
                     type="text"
-                    placeholder="John"
+                    placeholder="João"
                     value={formData.firstName}
                     onChange={(e) => handleChange("firstName", e.target.value)}
                     className="bg-background/50 border-primary/20 focus:border-primary"
@@ -69,11 +69,11 @@ const Signup = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="lastName" className="text-foreground">Last Name</Label>
+                  <Label htmlFor="lastName" className="text-foreground">Sobrenome</Label>
                   <Input
                     id="lastName"
                     type="text"
-                    placeholder="Doe"
+                    placeholder="Silva"
                     value={formData.lastName}
                     onChange={(e) => handleChange("lastName", e.target.value)}
                     className="bg-background/50 border-primary/20 focus:border-primary"
@@ -87,7 +87,7 @@ const Signup = () => {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder="joao@exemplo.com"
                   value={formData.email}
                   onChange={(e) => handleChange("email", e.target.value)}
                   className="bg-background/50 border-primary/20 focus:border-primary"
@@ -96,12 +96,12 @@ const Signup = () => {
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="password" className="text-foreground">Password</Label>
+                <Label htmlFor="password" className="text-foreground">Senha</Label>
                 <div className="relative">
                   <Input
                     id="password"
                     type={showPassword ? "text" : "password"}
-                    placeholder="Create a strong password"
+                    placeholder="Crie uma senha forte"
                     value={formData.password}
                     onChange={(e) => handleChange("password", e.target.value)}
                     className="bg-background/50 border-primary/20 focus:border-primary pr-10"
@@ -124,12 +124,12 @@ const Signup = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="confirmPassword" className="text-foreground">Confirm Password</Label>
+                <Label htmlFor="confirmPassword" className="text-foreground">Confirmar Senha</Label>
                 <div className="relative">
                   <Input
                     id="confirmPassword"
                     type={showConfirmPassword ? "text" : "password"}
-                    placeholder="Confirm your password"
+                    placeholder="Confirme sua senha"
                     value={formData.confirmPassword}
                     onChange={(e) => handleChange("confirmPassword", e.target.value)}
                     className="bg-background/50 border-primary/20 focus:border-primary pr-10"
@@ -159,13 +159,13 @@ const Signup = () => {
                   required
                 />
                 <Label htmlFor="terms" className="text-sm text-muted-foreground">
-                  I agree to the{" "}
+                  Concordo com os{" "}
                   <Link to="/terms" className="text-primary hover:underline">
-                    Terms of Service
+                    Termos de Uso
                   </Link>{" "}
-                  and{" "}
+                  e{" "}
                   <Link to="/privacy" className="text-primary hover:underline">
-                    Privacy Policy
+                    Política de Privacidade
                   </Link>
                 </Label>
               </div>
@@ -176,15 +176,15 @@ const Signup = () => {
                 className="w-full"
                 size="lg"
               >
-                Create Account
+                Criar Conta
               </Button>
             </form>
 
             <div className="mt-6 text-center">
               <p className="text-muted-foreground">
-                Already have an account?{" "}
+                Já tem uma conta?{" "}
                 <Link to="/login" className="text-primary hover:underline font-medium">
-                  Sign in
+                  Entrar
                 </Link>
               </p>
             </div>

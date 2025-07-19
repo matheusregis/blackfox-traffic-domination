@@ -4,23 +4,23 @@ import { Card, CardContent } from "@/components/ui/card";
 const features = [
   {
     icon: Shield,
-    title: "DNS Management",
-    description: "Advanced DNS routing and management system for maximum stealth and reliability.",
+    title: "Proteção Automática",
+    description: "Bloqueia visitantes indesejados automaticamente, protegendo seus anúncios de moderadores e concorrentes.",
   },
   {
     icon: Brain,
-    title: "Bot Filtering",
-    description: "AI-powered bot detection that learns and adapts to new threats automatically.",
+    title: "Filtragem Inteligente",
+    description: "Nossa IA identifica e filtra robôs e visitantes suspeitos, mostrando apenas conteúdo seguro para eles.",
   },
   {
     icon: BarChart3,
-    title: "Analytics",
-    description: "Real-time traffic analytics with detailed insights and performance metrics.",
+    title: "Relatórios Simples",
+    description: "Veja em tempo real quantos visitantes reais chegaram e quantos foram bloqueados.",
   },
   {
     icon: Route,
-    title: "Smart Redirection",
-    description: "Intelligent traffic routing based on geolocation, device, and behavioral patterns.",
+    title: "Redirecionamento Inteligente",
+    description: "Direciona visitantes automaticamente: clientes reais veem sua oferta, moderadores veem página segura.",
   },
 ];
 
@@ -30,11 +30,11 @@ const Features = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Powerful Features for
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> Elite Marketers</span>
+            Recursos Poderosos para
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> Seus Anúncios</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to stay ahead of detection systems and maximize your campaign performance.
+            Tudo que você precisa para proteger seus anúncios e aumentar seus lucros de forma automática.
           </p>
         </div>
 

@@ -4,53 +4,53 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const plans = [
   {
-    name: "Starter",
+    name: "Iniciante",
     price: "$97",
-    period: "/month",
-    description: "Perfect for testing and small campaigns",
+    period: "/mês",
+    description: "Perfeito para testar e campanhas pequenas",
     features: [
-      "50,000 Clicks",
-      "5 Domains",
-      "Basic Analytics",
-      "Email Support",
-      "DNS Management",
-      "Basic Bot Filtering"
+      "50.000 Visitantes",
+      "5 Domínios",
+      "Relatórios Básicos",
+      "Suporte por Email",
+      "Proteção Automática",
+      "Filtragem Básica"
     ],
     popular: false,
   },
   {
-    name: "Pro",
+    name: "Profissional",
     price: "$297",
-    period: "/month",
-    description: "For serious marketers and agencies",
+    period: "/mês",
+    description: "Para afiliados sérios e agências",
     features: [
-      "200,000 Clicks",
-      "20 Domains",
-      "Advanced Analytics",
-      "Priority Support",
-      "DNS Management",
-      "AI Bot Filtering",
-      "Smart Redirection",
-      "Custom Rules Engine"
+      "200.000 Visitantes",
+      "20 Domínios",
+      "Relatórios Avançados",
+      "Suporte Prioritário",
+      "Proteção Automática",
+      "Filtragem com IA",
+      "Redirecionamento Inteligente",
+      "Regras Personalizadas"
     ],
     popular: true,
   },
   {
     name: "Elite",
     price: "$597",
-    period: "/month",
-    description: "Maximum power for enterprise operations",
+    period: "/mês",
+    description: "Poder máximo para operações grandes",
     features: [
-      "Unlimited Clicks",
-      "Unlimited Domains",
-      "Real-time Analytics",
-      "24/7 VIP Support",
-      "Advanced DNS Management",
-      "AI Bot Filtering",
-      "Smart Redirection",
-      "Custom Rules Engine",
-      "API Access",
-      "White-label Options"
+      "Visitantes Ilimitados",
+      "Domínios Ilimitados",
+      "Relatórios em Tempo Real",
+      "Suporte VIP 24/7",
+      "Proteção Avançada",
+      "Filtragem com IA",
+      "Redirecionamento Inteligente",
+      "Regras Personalizadas",
+      "Acesso à API",
+      "Marca Branca"
     ],
     popular: false,
   },
@@ -62,11 +62,11 @@ const Pricing = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Choose Your
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> Power Level</span>
+            Escolha Seu
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> Plano Ideal</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Select the plan that matches your ambition. All plans include our core cloaking technology.
+            Selecione o plano que combina com seus objetivos. Todos incluem nossa tecnologia de proteção.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ const Pricing = () => {
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-primary px-4 py-2 rounded-full flex items-center gap-2">
                     <Star className="w-4 h-4" />
-                    <span className="text-sm font-medium">Most Popular</span>
+                    <span className="text-sm font-medium">Mais Popular</span>
                   </div>
                 </div>
               )}
@@ -116,7 +116,7 @@ const Pricing = () => {
                   className="w-full"
                   size="lg"
                 >
-                  {plan.popular ? 'Start Dominating' : 'Get Started'}
+                  {plan.popular ? 'Começar Agora' : 'Escolher Plano'}
                 </Button>
               </CardContent>
             </Card>

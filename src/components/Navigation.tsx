@@ -7,9 +7,9 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Recursos", href: "#features" },
+    { label: "Planos", href: "#pricing" },
+    { label: "Perguntas", href: "#faq" },
   ];
 
   return (
@@ -20,7 +20,7 @@ const Navigation = () => {
           <div className="flex items-center gap-3">
             <img src={blackfoxLogo} alt="BlackFox" className="w-8 h-8" />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              BlackFox
+              Cloaker Guard
             </span>
           </div>
 
@@ -40,10 +40,10 @@ const Navigation = () => {
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost" size="sm">
-              Login
+              Entrar
             </Button>
             <Button variant="premium" size="sm">
-              Sign Up
+              Criar Conta
             </Button>
           </div>
 
@@ -74,10 +74,10 @@ const Navigation = () => {
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-primary/20">
                 <Button variant="ghost" size="sm">
-                  Login
+                  Entrar
                 </Button>
                 <Button variant="premium" size="sm">
-                  Sign Up
+                  Criar Conta
                 </Button>
               </div>
             </div>

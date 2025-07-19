@@ -21,11 +21,8 @@ const Hero = () => {
             className="w-24 h-24 mx-auto mb-6 opacity-90"
           />
           <h1 className="text-6xl md:text-8xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
-            BlackFox
+            Cloaker Guard
           </h1>
-          <div className="text-2xl md:text-3xl font-light text-muted-foreground">
-            Cloaker
-          </div>
         </div>
 
         {/* Slogan */}
@@ -37,22 +34,22 @@ const Hero = () => {
           {/* Key features */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <span className="px-4 py-2 bg-secondary/50 rounded-full text-sm font-medium border border-primary/20">
-              Anti-Ban Protection
+              Proteção Anti-Bloqueio
             </span>
             <span className="px-4 py-2 bg-secondary/50 rounded-full text-sm font-medium border border-primary/20">
-              AI-Based Filtering
+              Filtragem Inteligente
             </span>
             <span className="px-4 py-2 bg-secondary/50 rounded-full text-sm font-medium border border-primary/20">
-              Full Traffic Control
+              Controle Total de Visitantes
             </span>
           </div>
         </div>
 
         {/* Description */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          The ultimate traffic filtering solution for elite affiliates and marketers. 
-          Protect your campaigns, bypass detection systems, and maximize your ROI with our 
-          state-of-the-art cloaking technology.
+          Proteja seus anúncios e aumente seus lucros automaticamente. 
+          Nossa tecnologia inteligente filtra visitantes indesejados e direciona apenas 
+          clientes reais para suas ofertas, evitando bloqueios e maximizando seus resultados.
         </p>
 
         {/* CTA Button */}
@@ -63,7 +60,7 @@ const Hero = () => {
             className="text-lg px-8 py-6 mb-16"
             onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Start Dominating Traffic
+            Começar Agora
           </Button>
         </div>
 

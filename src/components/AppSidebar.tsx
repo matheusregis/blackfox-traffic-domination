@@ -14,11 +14,11 @@ import {
 import blackfoxLogo from "@/assets/blackfox-logo.png";
 
 const items = [
-  { title: "Overview", url: "/dashboard", icon: Home },
-  { title: "Campaigns", url: "/dashboard/campaigns", icon: Zap },
-  { title: "DNS Manager", url: "/dashboard/dns", icon: Globe },
-  { title: "Rules Engine", url: "/dashboard/rules", icon: Shield },
-  { title: "Analytics", url: "/dashboard/analytics", icon: BarChart3 },
+  { title: "Visão Geral", url: "/dashboard", icon: Home },
+  { title: "Campanhas", url: "/dashboard/campaigns", icon: Zap },
+  { title: "Gerenciar Domínios", url: "/dashboard/dns", icon: Globe },
+  { title: "Regras de Proteção", url: "/dashboard/rules", icon: Shield },
+  { title: "Relatórios", url: "/dashboard/analytics", icon: BarChart3 },
 ];
 
 export function AppSidebar() {
@@ -45,7 +45,7 @@ export function AppSidebar() {
             <img src={blackfoxLogo} alt="BlackFox" className="w-8 h-8" />
             {!collapsed && (
               <span className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
-                BlackFox
+                Cloaker Guard
               </span>
             )}
           </div>
@@ -53,7 +53,7 @@ export function AppSidebar() {
 
         <SidebarGroup>
           <SidebarGroupLabel className={collapsed ? "hidden" : ""}>
-            Main Navigation
+            Navegação Principal
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -85,7 +85,7 @@ export function AppSidebar() {
                   className={getNavCls}
                 >
                   <Settings className="h-4 w-4" />
-                  {!collapsed && <span>Settings</span>}
+                  {!collapsed && <span>Configurações</span>}
                 </NavLink>
               </SidebarMenuButton>
             </SidebarMenuItem>

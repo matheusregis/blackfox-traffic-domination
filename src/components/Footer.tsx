@@ -12,42 +12,42 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <img src={blackfoxLogo} alt="BlackFox" className="w-8 h-8" />
               <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                BlackFox Cloaker
+                Cloaker Guard
               </span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              The ultimate traffic filtering solution for elite affiliates and marketers. 
-              Outsmart the system and dominate your traffic.
+              Proteja seus anúncios e aumente seus lucros automaticamente com nossa 
+              tecnologia inteligente de filtragem de visitantes.
             </p>
             <div className="flex gap-4">
               <Button variant="outline" size="sm">
-                Login
+                Entrar
               </Button>
               <Button variant="premium" size="sm">
-                Sign Up
+                Criar Conta
               </Button>
             </div>
           </div>
 
           {/* Product */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Product</h3>
+            <h3 className="font-semibold text-foreground mb-4">Produto</h3>
             <ul className="space-y-3 text-muted-foreground">
-              <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#pricing" className="hover:text-primary transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">API Docs</a></li>
+              <li><a href="#features" className="hover:text-primary transition-colors">Recursos</a></li>
+              <li><a href="#pricing" className="hover:text-primary transition-colors">Planos</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Documentação</a></li>
               <li><a href="#" className="hover:text-primary transition-colors">Status</a></li>
             </ul>
           </div>
 
           {/* Support */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Support</h3>
+            <h3 className="font-semibold text-foreground mb-4">Suporte</h3>
             <ul className="space-y-3 text-muted-foreground">
-              <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Tutorials</a></li>
+              <li><a href="#faq" className="hover:text-primary transition-colors">Perguntas</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Contato</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Tutoriais</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Ajuda</a></li>
             </ul>
           </div>
         </div>
@@ -56,12 +56,12 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-muted-foreground text-sm">
-            © 2024 BlackFox Cloaker. All rights reserved.
+            © 2024 Cloaker Guard. Todos os direitos reservados.
           </div>
           <div className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Usage Policy</a>
+            <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
+            <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
+            <a href="#" className="hover:text-primary transition-colors">Política de Uso</a>
           </div>
         </div>
       </div>

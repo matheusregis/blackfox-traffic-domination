@@ -7,36 +7,36 @@ import {
 
 const faqs = [
   {
-    question: "What is traffic cloaking and why do I need it?",
-    answer: "Traffic cloaking is a technique that shows different content to different visitors based on various factors like IP address, user agent, or referrer. It's essential for affiliate marketers to protect their campaigns from competitors, compliance checkers, and ad platform bots that could lead to account bans."
+    question: "O que é proteção de tráfego e por que preciso disso?",
+    answer: "É uma tecnologia que mostra conteúdo diferente para cada tipo de visitante. Para moderadores e robôs, mostramos uma página segura. Para clientes reais, mostramos sua oferta verdadeira. Isso protege seus anúncios de serem bloqueados e aumenta seus lucros."
   },
   {
-    question: "How does BlackFox protect against ad account bans?",
-    answer: "BlackFox uses advanced AI algorithms to detect and filter out unwanted traffic including compliance bots, competitors, and platform crawlers. Our system learns from traffic patterns and continuously adapts to new threats, ensuring your real landing pages remain hidden from detection systems."
+    question: "Como o Cloaker Guard protege contra bloqueios de conta?",
+    answer: "Nossa IA detecta automaticamente quando moderadores, concorrentes ou robôs estão visitando seus anúncios. Para eles, mostramos uma página segura e aprovada. Para clientes reais interessados em comprar, mostramos sua oferta verdadeira."
   },
   {
-    question: "Is BlackFox compliant with advertising platforms?",
-    answer: "BlackFox is a tool for traffic filtering and protection. While we provide advanced filtering capabilities, users are responsible for ensuring their campaigns comply with the terms of service of their chosen advertising platforms. We recommend consulting with legal experts for compliance guidance."
+    question: "É seguro usar o Cloaker Guard?",
+    answer: "O Cloaker Guard é uma ferramenta de proteção de tráfego. Fornecemos a tecnologia, mas você é responsável por usar de acordo com as regras das plataformas onde anuncia. Recomendamos sempre consultar as políticas de cada plataforma."
   },
   {
-    question: "How quickly can I set up BlackFox for my campaigns?",
-    answer: "Setup is incredibly fast - most users are up and running within 5 minutes. Our plug-and-play solution requires no technical expertise. Simply add your domains, configure your rules, and start protecting your traffic immediately."
+    question: "Quanto tempo leva para configurar?",
+    answer: "É super rápido! A maioria dos usuários está protegido em menos de 5 minutos. Não precisa de conhecimento técnico. É só adicionar seus domínios, configurar as regras básicas e começar a proteger seus anúncios imediatamente."
   },
   {
-    question: "What kind of analytics and reporting do you provide?",
-    answer: "BlackFox provides comprehensive real-time analytics including traffic sources, filtering statistics, geographical data, device information, and conversion tracking. You'll have complete visibility into your traffic quality and filtering performance."
+    question: "Que tipo de relatórios vocês fornecem?",
+    answer: "Você vê tudo em tempo real: quantos visitantes chegaram, quantos eram reais, quantos foram bloqueados, de onde vieram, que dispositivos usaram e quanto você está convertendo. Tudo de forma simples e clara."
   },
   {
-    question: "Do you offer API access for advanced users?",
-    answer: "Yes, our Pro and Elite plans include API access for advanced integrations. You can programmatically manage domains, rules, and access analytics data to integrate BlackFox with your existing marketing stack."
+    question: "Tem acesso à API para usuários avançados?",
+    answer: "Sim! Os planos Profissional e Elite incluem acesso à API para integrações avançadas. Você pode gerenciar domínios, regras e acessar dados dos relatórios para integrar com suas outras ferramentas de marketing."
   },
   {
-    question: "What happens if I exceed my click limits?",
-    answer: "If you exceed your plan's click limit, additional clicks are processed at overage rates. For Starter and Pro plans, overage clicks are charged at $0.001 per click. Elite plan users enjoy unlimited clicks with no overage fees."
+    question: "O que acontece se eu passar do limite de visitantes?",
+    answer: "Se passar do limite do seu plano, cobramos apenas R$ 0,003 por visitante extra nos planos Iniciante e Profissional. No plano Elite, você tem visitantes ilimitados sem custo extra."
   },
   {
-    question: "Can I upgrade or downgrade my plan anytime?",
-    answer: "Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate any billing adjustments on your next invoice."
+    question: "Posso mudar de plano a qualquer momento?",
+    answer: "Claro! Você pode aumentar ou diminuir seu plano quando quiser. As mudanças são imediatas e ajustamos o valor proporcionalmente na sua próxima fatura."
   }
 ];
 
@@ -46,11 +46,11 @@ const FAQ = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Frequently Asked
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> Questions</span>
+            Perguntas
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> Frequentes</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to know about BlackFox Cloaker and traffic protection.
+            Tudo que você precisa saber sobre o Cloaker Guard e proteção de tráfego.
           </p>
         </div>
 
