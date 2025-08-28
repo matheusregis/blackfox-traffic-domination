@@ -13,7 +13,7 @@ export type Domain = {
   whiteUrl: string;
   blackUrl: string;
 };
-
+const API_URL = import.meta.env.VITE_API_URL;
 export default function DomainsPage() {
   const [domains, setDomains] = useState<Domain[]>([]);
   const { user } = useUser();
@@ -21,9 +21,7 @@ export default function DomainsPage() {
   const userId = user?.userId;
   const fetchDomains = async () => {
     try {
-      const response = await axios.get(
-        `http://localhost:3000/domains/${userId}`
-      );
+      const response = await axios.get(`http://${API_URL}/domains/${userId}`);
       setDomains(response.data);
     } catch (err) {
       toast.error("Erro ao carregar domínios");

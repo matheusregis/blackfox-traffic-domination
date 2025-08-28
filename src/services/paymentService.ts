@@ -3,8 +3,7 @@
 // Axios central do front
 import axios, { AxiosError } from "axios";
 
-export const API_URL =
-  (import.meta.env.VITE_API_URL as string) || "http://localhost:3000";
+export const API_URL = import.meta.env.VITE_API_URL as string;
 
 export const api = axios.create({
   baseURL: API_URL,
