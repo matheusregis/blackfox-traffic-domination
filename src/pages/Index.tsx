@@ -4,10 +4,12 @@ import Features from "@/components/Features";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import { AuthRedirect } from "@/components/AuthRedirect";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <AuthRedirect />
       <Navigation />
       <Hero />
       <Features />

@@ -1,11 +1,17 @@
 import { Check, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { PaymentButton } from "@/components/PaymentButton"; // << importa o botão que abre o modal
+
+const PLAN_PRICES: Record<string, number> = {
+  Iniciante: 9700, // R$ 97,00
+  Profissional: 29700, // R$ 297,00
+  Elite: 59700, // R$ 597,00
+};
 
 const plans = [
   {
     name: "Iniciante",
-    price: "$97",
+    price: "R$ 97",
     period: "/mês",
     description: "Perfeito para testar e campanhas pequenas",
     features: [
@@ -14,13 +20,13 @@ const plans = [
       "Relatórios Básicos",
       "Suporte por Email",
       "Proteção Automática",
-      "Filtragem Básica"
+      "Filtragem Básica",
     ],
     popular: false,
   },
   {
     name: "Profissional",
-    price: "$297",
+    price: "R$ 297",
     period: "/mês",
     description: "Para afiliados sérios e agências",
     features: [
@@ -31,13 +37,13 @@ const plans = [
       "Proteção Automática",
       "Filtragem com IA",
       "Redirecionamento Inteligente",
-      "Regras Personalizadas"
+      "Regras Personalizadas",
     ],
     popular: true,
   },
   {
     name: "Elite",
-    price: "$597",
+    price: "R$ 597",
     period: "/mês",
     description: "Poder máximo para operações grandes",
     features: [
@@ -50,7 +56,7 @@ const plans = [
       "Redirecionamento Inteligente",
       "Regras Personalizadas",
       "Acesso à API",
-      "Marca Branca"
+      "Marca Branca",
     ],
     popular: false,
   },
@@ -63,21 +69,25 @@ const Pricing = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Escolha Seu
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> Plano Ideal</span>
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              {" "}
+              Plano Ideal
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Selecione o plano que combina com seus objetivos. Todos incluem nossa tecnologia de proteção.
+            Selecione o plano que combina com seus objetivos. Todos incluem
+            nossa tecnologia de proteção.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <Card 
+            <Card
               key={plan.name}
               className={`relative transition-all duration-300 ${
-                plan.popular 
-                  ? 'border-primary shadow-glow scale-105' 
-                  : 'border-primary/20 hover:border-primary/40 hover:shadow-glow'
+                plan.popular
+                  ? "border-primary shadow-glow scale-105"
+                  : "border-primary/20 hover:border-primary/40 hover:shadow-glow"
               } bg-card/50`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -89,9 +99,11 @@ const Pricing = () => {
                   </div>
                 </div>
               )}
-              
+
               <CardHeader className="text-center pb-6">
-                <h3 className="text-2xl font-bold text-foreground">{plan.name}</h3>
+                <h3 className="text-2xl font-bold text-foreground">
+                  {plan.name}
+                </h3>
                 <div className="mt-4">
                   <span className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">
                     {plan.price}
@@ -111,13 +123,12 @@ const Pricing = () => {
                   ))}
                 </ul>
 
-                <Button 
-                  variant={plan.popular ? "premium" : "secondary"}
-                  className="w-full"
-                  size="lg"
-                >
-                  {plan.popular ? 'Começar Agora' : 'Escolher Plano'}
-                </Button>
+                {/* Botão que abre o modal de pagamento (Cartão/Pix) */}
+                <PaymentButton
+                  amount={PLAN_PRICES[plan.name] ?? 0}
+                  metadata={{ plan: plan.name }}
+                  label={plan.popular ? "Começar Agora" : "Escolher Plano"}
+                />
               </CardContent>
             </Card>
           ))}

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import blackfoxLogo from "@/assets/blackfox-logo.png";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,12 +40,19 @@ const Navigation = () => {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
+            <Link
+              to="/login"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Entrar
-            </Button>
-            <Button variant="premium" size="sm">
+            </Link>
+
+            <Link
+              to="/signup"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Criar Conta
-            </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

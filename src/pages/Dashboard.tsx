@@ -1,6 +1,6 @@
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
-import { DashboardHeader } from "@/components/DashboardHeader";
+import { Header } from "@/components/Header";
 import { DashboardOverview } from "@/components/DashboardOverview";
 
 const Dashboard = () => {
@@ -9,7 +9,7 @@ const Dashboard = () => {
       <div className="min-h-screen flex w-full bg-background">
         <AppSidebar />
         <main className="flex-1">
-          <DashboardHeader />
+          <Header headerName="Dashboard" />
           <div className="p-6">
             <DashboardOverview />
           </div>
