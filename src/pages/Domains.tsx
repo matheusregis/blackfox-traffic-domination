@@ -21,7 +21,7 @@ export default function DomainsPage() {
   const userId = user?.userId;
   const fetchDomains = async () => {
     try {
-      const response = await axios.get(`http://${API_URL}/domains/${userId}`);
+      const response = await axios.get(`${API_URL}/domains/${userId}`);
       setDomains(response.data);
     } catch (err) {
       toast.error("Erro ao carregar domínios");
